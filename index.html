@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head></head>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  MY LOVE</title>
+    <img height="" src="image.love.jpg" alt="">
+    
+</head>
+<body>
+
+     <h1 style="color: #ff3366;">MY PAGLU</h1>
+    <P>  i love you paglu aap mere liye sabkuch ho mai apko kaise explain karu meri life mein sabse jyada koi pyari chij hai toh vo aap ho apko malum hai most beautiful girl in the world kon hai socho sochoooooooo vo aap ho paglu or koi ho sakta hai kya</P>
+<div>
+    <a href="https://youtube.com/shorts/z3_Ov4zzg1E?si=8glii3llAO-Ze1e1">KARLO PAGLU BRABRI</a>
+</div>
+<div>
+
+</div>
+
+<img src="journey.love.jpg" alt="">
+    <h2>OUR JOURNEY TOGETHER</h2>
+<P>apko yaad haI jab kutte ne apko bhagaya tha apke kaise mere pass bhag kr aaye the 
+</P>
+<P> vo bhi apko yaad hi hoga na jab um horror house gye the aap kaise dar gye the apne mujhe hug kar lia tha </P>
+<div>
+    <a href="https://youtube.com/shorts/sAlOgHnL5ok?si=9bLzUtXMNAwJzPq9">KARLO REHEM PAGLU</a>
+</div>
+<h3>THANK YOU PAGLU</h3>
+<img src="thank.u.jpg" alt="">
+<p> <ul>3</ul>aap meri life ka vo part ho jaha loyalty , care aur pyar apne aap hi define ho jata hai , mujhe  apke bina kuch bhi acha nhi lagta  aur agar aap sath rehte hoto war 2 movie bhi acchi lagti hai,
+    kabhi kabhi sochta hun  yrr koi itna perfect kaise ho  sakta kaise karte ho aap sab kuch manage  mujhe to lagta hain ram ji ne mujhe bhakti ka  fal dia hai apko dekar
+    aur apki loyalty care apke sath time spend karna yeah sabse best part hai life ka,
+    bss hamesha aishe hi mera sath dete rehhna , varna fir mujhe aur naye naye tarike dhudhne padainge apko impress karne ke liye samjhe pagluuu
+</p>
+<div>
+   <a href ="https://youtube.com/shorts/4CEJqVtObS4?si=Tq8_UCWByGgVin4-">MERA DIL</a> 
+   <Blockquote>
+    "you are my everything"
+   </Blockquote>
+
+   <TH>ANNIVERSARY  DATE</TH>
+   
+</div>
+<div>
+    
+    
+</div>
+<div>
+     </textarea>
+ <div>
+    <select name="date" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+     </select>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise for You 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      padding: 50px;
+    }
+
+    h2 {
+      color: #d63384;
+    }
+
+    input[type="date"] {
+      margin: 10px;
+      padding: 8px;
+      border: 2px solid #ff99cc;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    #heart {
+      display: none;
+      font-size: 100px;
+      color: #ff3366;
+      animation: heartbeat 1s infinite;
+      margin-top: 30px;
+    }
+
+    #message {
+      display: none;
+      font-size: 24px;
+      color: #cc0066;
+      margin-top: 20px;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.3); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    canvas {
+      position: fixed;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Apni 5 special dates select karo 💕</h2>
+
+  <div id="dates">
+    <input type="date" class="date-picker">
+    <input type="date" class="date-picker">
+    <input type="date" class="date-picker">
+    <input type="date" class="date-picker">
+    <input type="date" class="date-picker">
+  </div>
+
+  <div id="heart">❤️</div>
+  <div id="message">Tum meri zindagi ki sabse khoobsurat date ho 💖</div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script>
+    const dateInputs = document.querySelectorAll('.date-picker');
+    const heart = document.getElementById('heart');
+    const message = document.getElementById('message');
+
+    function checkDates() {
+      let filled = 0;
+      dateInputs.forEach(input => {
+        if (input.value) filled++;
+      });
+
+      if (filled === 5) {
+        heart.style.display = 'block';
+        message.style.display = 'block';
+        startConfetti();
+      } else {
+        heart.style.display = 'none';
+        message.style.display = 'none';
+        stopConfetti();
+      }
+    }
+
+    dateInputs.forEach(input => {
+      input.addEventListener('change', checkDates);
+    });
+
+    // Simple confetti
+    const canvas = document.getElementById("confetti-canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let confetti = [];
+
+    function createConfettiPiece() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        r: Math.random() * 6 + 4,
+        d: Math.random() * 30 + 10,
+        color: `hsl(${Math.random() * 360}, 100%, 70%)`,
+        tilt: Math.random() * 10 - 10,
+        tiltAngle: 0
+      };
+    }
+
+    function drawConfettiPiece(p) {
+      ctx.beginPath();
+      ctx.lineWidth = p.r;
+      ctx.strokeStyle = p.color;
+      ctx.moveTo(p.x + p.tilt + p.r / 2, p.y);
+      ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.d / 2);
+      ctx.stroke();
+    }
+
+    function updateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < confetti.length; i++) {
+        let p = confetti[i];
+        p.y += Math.cos(p.d) + 1 + p.r / 2;
+        p.tiltAngle += 0.05;
+        p.tilt = Math.sin(p.tiltAngle - i / 3) * 15;
+
+        drawConfettiPiece(p);
+
+        if (p.y > canvas.height) {
+          confetti[i] = createConfettiPiece();
+        }
+      }
+    }
+
+    let confettiInterval;
+
+    function startConfetti() {
+      confetti = Array.from({ length: 150 }, createConfettiPiece);
+      confettiInterval = setInterval(updateConfetti, 16);
+    }
+
+    function stopConfetti() {
+      clearInterval(confettiInterval);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
